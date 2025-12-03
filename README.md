@@ -59,7 +59,7 @@ hatch shell
 ### Display Help
 
 ```bash
-hatch run wkt --help
+hatch run wktgeo --help
 ```
 
 ---
@@ -69,7 +69,7 @@ hatch run wkt --help
 Using a GeoJSON string:
 
 ```bash
-hatch run wkt \
+hatch run wktgeo \
     --recipe wkt \
     --geo '{"type": "Point", "coordinates": [12.5, 41.9]}'
 ```
@@ -77,13 +77,13 @@ hatch run wkt \
 Using a local STAC Item file:
 
 ```bash
-hatch run wkt --recipe wkt --stac ./item.json
+hatch run wktgeo --recipe wkt --stac ./item.json
 ```
 
 Using a remote STAC Item:
 
 ```bash
-hatch run wkt --recipe wkt --stac https://example.com/stac-item.json
+hatch run wktgeo --recipe wkt --stac https://example.com/stac-item.json
 ```
 
 ---
@@ -93,7 +93,7 @@ hatch run wkt --recipe wkt --stac https://example.com/stac-item.json
 Reproject geometry from EPSG:4326 to EPSG:3857:
 
 ```bash
-hatch run wkt \
+hatch run wktgeo \
     --recipe epsg \
     --geo "POINT (12.5 41.9)" \
     --target-epsg 3857
@@ -107,7 +107,7 @@ hatch run wkt \
 ### Running the CLI During Development
 
 ```bash
-hatch run wkt --help
+hatch run wktgeo --help
 ```
 
 
