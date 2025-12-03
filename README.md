@@ -45,6 +45,11 @@
 pip install hatch
 ```
 
+You can install the wktgeo package directly from PyPI:
+```bash
+pip install wktgeo
+```
+
 
 ### Create the Hatch Environment
 
